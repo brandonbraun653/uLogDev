@@ -16,6 +16,9 @@
     <Filter Include="fmt">
       <UniqueIdentifier>{e71a86e9-83a1-494f-9cd5-c70be9ea7d37}</UniqueIdentifier>
     </Filter>
+    <Filter Include="uLog">
+      <UniqueIdentifier>{4e6ea14f-dd6e-4e78-8817-47b769ab9f9e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="uLogDevelopment.cpp">
@@ -26,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\fmt\src\posix.cc">
       <Filter>fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\uLog\uLog\ulog.cpp">
+      <Filter>uLog</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\fmt\include\fmt\ranges.h">
       <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\uLog\uLog\ulog.hpp">
+      <Filter>uLog</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
