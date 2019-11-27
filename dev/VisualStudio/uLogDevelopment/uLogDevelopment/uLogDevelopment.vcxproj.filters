@@ -19,6 +19,9 @@
     <Filter Include="uLog">
       <UniqueIdentifier>{4e6ea14f-dd6e-4e78-8817-47b769ab9f9e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="uLog\sinks">
+      <UniqueIdentifier>{8ad36360-5b25-4a94-9e47-60eef4818dae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="uLogDevelopment.cpp">
@@ -32,6 +35,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\uLog\uLog\ulog.cpp">
       <Filter>uLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\uLog\uLog\sinks\sink_cout.cpp">
+      <Filter>uLog\sinks</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +76,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\uLog\uLog\ulog.hpp">
       <Filter>uLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\uLog\uLog\types.hpp">
+      <Filter>uLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\uLog\uLog\config.hpp">
+      <Filter>uLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\uLog\uLog\sinks\sink_intf.hpp">
+      <Filter>uLog\sinks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\uLog\uLog\sinks\sink_cout.hpp">
+      <Filter>uLog\sinks</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

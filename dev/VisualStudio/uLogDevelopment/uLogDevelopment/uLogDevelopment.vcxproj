@@ -91,6 +91,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)../../../../uLog;$(ProjectDir)../../../../lib\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -106,6 +107,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)../../../../uLog;$(ProjectDir)../../../../lib\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,6 +125,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)../../../../uLog;$(ProjectDir)../../../../lib\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,6 +145,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)../../../../uLog;$(ProjectDir)../../../../lib\fmt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\lib\fmt\src\format.cc" />
     <ClCompile Include="..\..\..\..\lib\fmt\src\posix.cc" />
+    <ClCompile Include="..\..\..\..\uLog\uLog\sinks\sink_cout.cpp" />
     <ClCompile Include="..\..\..\..\uLog\uLog\ulog.cpp" />
     <ClCompile Include="uLogDevelopment.cpp" />
   </ItemGroup>
@@ -168,6 +173,10 @@
     <ClInclude Include="..\..\..\..\lib\fmt\include\fmt\posix.h" />
     <ClInclude Include="..\..\..\..\lib\fmt\include\fmt\printf.h" />
     <ClInclude Include="..\..\..\..\lib\fmt\include\fmt\ranges.h" />
+    <ClInclude Include="..\..\..\..\uLog\uLog\config.hpp" />
+    <ClInclude Include="..\..\..\..\uLog\uLog\sinks\sink_cout.hpp" />
+    <ClInclude Include="..\..\..\..\uLog\uLog\sinks\sink_intf.hpp" />
+    <ClInclude Include="..\..\..\..\uLog\uLog\types.hpp" />
     <ClInclude Include="..\..\..\..\uLog\uLog\ulog.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
